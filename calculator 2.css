@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#output{
+    flex-direction: column;
+    justify-content:flex-end ;
+    align-items: flex-end;
+    gap: 15px;
+
+    
+}
+#input{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.btn{
+    flex-basis: calc(25% - 10px);
+    margin: 5px;
+    font-size: 32px; 
+    border: 0;
+    border-radius:24px ;
+    height: 72px; 
+    cursor: pointer;
+    color: white;
+   
+}
+.light,
+.light:focus{
+    background-color: hsl(233, 10%, 34%);
+}
+
+.light:hover{
+    background-color: hsl(223, 14%, 59%);
+}
+
+.blue,
+.blue:focus{
+    background-color: hsl(30, 89%, 55%);
+}
+
+.blue:hover{
+    background-color:hsl(30, 89%, 65%);
+}
+.dark,
+.dark:focus{
+    background-color: hsl(234, 10%, 20%);
+}
+
+.dark:hover{
+    background-color:hsl(235, 12%, 36%);
+}

@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  padding: 20px;
+  margin: 0;
+}
+
+.heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.addnotebox {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addnotebox input,
+.addnotebox textarea
+ {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+.addnotebox select{
+   padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.addnote,
+.deletebtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.addnote:hover,
+.deletebtn:hover {
+  background-color: #0056b3;
+}
+
+.notes {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.noteContainer {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  padding: 15px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.singledeletebtn{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  margin-top: 40px;
+}
+.singledeletebtn:hover{
+   background-color: #0056b3;
+}
+
+.noteContainer:hover {
+  transform: scale(1.01);
+}
+
+.noteContainer h3,
+.noteContainer p,
+.noteContainer small {
+  margin: 5px 0;
+}
+
+.noteContainer.expanded {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+  position:relative;
+  background-color: #fefefe;
+}
+

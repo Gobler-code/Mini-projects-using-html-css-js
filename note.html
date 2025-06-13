@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="note.css">
+    <script src="note.js" defer></script>
+</head>
+<body>
+    <h1 class="heading">MY NOTE APP</h1>
+    <section class="addnotebox">
+        <div class="aboutnote">
+            <label>
+                Title: <input type="text" class="input-title"/>
+            </label>
+            <br><br>
+            <label >
+                Tag:
+                <select class="input-tag">
+
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="work">Idea</option>
+                    
+                </select>
+            </label>
+            <br>
+            <br>
+             <label>
+                Content:
+                <textarea class="input-content" rows="5" cols="30" placeholder="Write your note here..."></textarea>
+            </label>
+            <br><br>
+            <button class="addnote">+ Add note</button>
+             <button class="deletebtn">Delete All</button>
+        </div>
+    </section>
+    <hr/>
+    <section class="notes">
+    
+    </section>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #3188b0, #eb6628 );
+
+}
+.weatherform{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 5px;
+    
+}
+.weathersearch{
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: solid hsl(0, 0%, 50%);
+    border-color: hsl(38, 4%, 65%);
+    padding: 0.5rem;
+}
+
+.submit{
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border:none;
+    padding: 0.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgb(200, 200, 240);
+   
+}
+.submit:hover{
+     background-color: rgb(173, 173, 247);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+    align-items: center;
+    background:linear-gradient(180deg,
+                              #e055b8, #a6c1ee     );
+    padding: 50px;
+     border: 1rem;
+    border-radius: 10px;
+    box-shadow:  0 1rem 3rem 1rem rgba(7, 7, 7, 0.25) ;
+    max-width: 300px;
+    width: 100%;
+    
+}
+.errorDisplay{
+     font-family: 'Roboto Mono', monospace;
+  font-size: 17px;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+   font-weight: 600;
+   font-size: 2rem;
+
+}
+.card p, .tempDisplay, .humidityDisplay, .descDisplay {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 17px;
+}
+.weatherEmoji{
+    font-size: 7.5rem;
+}
